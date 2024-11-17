@@ -156,26 +156,30 @@ export default function Home() {
       <div className="text-center mt-8">
         <div className="flex justify-center space-x-6">
           {/* Email Icon */}
-          <a href="mailto:example@example.com">
+          <a href="ananyanigam112@gmail.com">
             <div className="w-12 h-12 flex items-center justify-center bg-gray-800 dark:bg-gray-200 rounded-full">
+            <img src="/img/gmailb.png" alt="Django" className="h-15" />
               <i className="fas fa-envelope text-white dark:text-black"></i>
             </div>
           </a>
-          {/* Google Scholar Icon */}
-          <a href="https://scholar.google.com">
+          
+          <a href="https://github.com/NigamAnanya">
             <div className="w-12 h-12 flex items-center justify-center bg-gray-800 dark:bg-gray-200 rounded-full">
+            <img src="/img/github.jpeg" alt="Github" className="h-15" />
               <i className="ai ai-google-scholar text-white dark:text-black"></i>
             </div>
           </a>
           {/* LinkedIn Icon */}
-          <a href="https://linkedin.com">
+          <a href="https://www.linkedin.com/in/ananya--nigam/">
             <div className="w-12 h-12 flex items-center justify-center bg-gray-800 dark:bg-gray-200 rounded-full">
+            <img src="/img/link.png" alt="LinkedIn" className="h-15" />
               <i className="fab fa-linkedin text-white dark:text-black"></i>
             </div>
           </a>
           {/* RSS Icon */}
-          <a href="/rss">
+          <a href="https://x.com/AnanyaNigam012">
             <div className="w-12 h-12 flex items-center justify-center bg-gray-800 dark:bg-gray-200 rounded-full">
+            <img src="/img/x.jpg" alt="Twitter" className="h-15" />
               <i className="fas fa-rss text-white dark:text-black"></i>
             </div>
           </a>

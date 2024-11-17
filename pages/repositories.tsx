@@ -229,13 +229,13 @@ const Repositories: React.FC<RepositoriesProps> = ({ repos }) => {
             <div className="bg-gray-800 dark:bg-gray-100 p-8 rounded-lg shadow-md max-w-lg mx-auto text-center">
               <h3 className="text-2xl font-semibold mb-4">Languages and Databases</h3>
               <div className="flex justify-center flex-wrap gap-4">
-                <img src="/img/python.png" alt="Python" className="h-8" />
-                <img src="/img/html.png" alt="Java" className="h-8" />
-                <img src="/img/CSS.png" alt="HTML" className="h-8" />
-                <img src="/img/js.png" alt="CSS" className="h-8" />
+                <img src="/img/python.png" alt="Python" className="h-12" />
+                <img src="/img/html.png" alt="Java" className="h-12" />
+                <img src="/img/CSS.png" alt="HTML" className="h-12" />
+                <img src="/img/js.png" alt="CSS" className="h-12" />
                 <img src="/img/tss.png" alt="MySQL" className="h-8" />
-                <img src="/img/mysql.png" alt="PostgreSQL" className="h-8" />
-                <img src="/img/mongo.png" alt="PostgreSQL" className="h-8" />
+                <img src="/img/mysql.png" alt="PostgreSQL" className="h-12" />
+                <img src="/img/mongo.png" alt="PostgreSQL" className="h-12" />
               </div>
             </div>
 
@@ -243,11 +243,11 @@ const Repositories: React.FC<RepositoriesProps> = ({ repos }) => {
             <div className="bg-gray-800 dark:bg-gray-100 p-8 rounded-lg shadow-md max-w-lg mx-auto text-center">
               <h3 className="text-2xl font-semibold mb-4">Frameworks</h3>
               <div className="flex justify-center flex-wrap gap-4">
-                <img src="/img/nextjs.jpg" alt="Django" className="h-8" />
-                <img src="/img/react.png" alt="Node.js" className="h-8" />
-                <img src="/img/node.jpg" alt="Bootstrap" className="h-8" />
-                <img src="/img/tailwind.png" alt="TensorFlow" className="h-8" />
-                <img src="/img/expresss.png" alt="PyTorch" className="h-8" />
+                <img src="/img/nextjs.jpg" alt="Django" className="h-12" />
+                <img src="/img/react.png" alt="Node.js" className="h-12" />
+                <img src="/img/node.jpg" alt="Bootstrap" className="h-12" />
+                <img src="/img/tailwind.png" alt="TensorFlow" className="h-12" />
+                <img src="/img/expresss.png" alt="PyTorch" className="h-12" />
                 
               </div>
             </div>
@@ -256,10 +256,10 @@ const Repositories: React.FC<RepositoriesProps> = ({ repos }) => {
             <div className="bg-gray-800 dark:bg-gray-100 p-8 rounded-lg shadow-md max-w-lg mx-auto text-center">
               <h3 className="text-2xl font-semibold mb-4">Tools</h3>
               <div className="flex justify-center flex-wrap gap-4">
-                <img src="/img/git.png" alt="Git" className="h-8" />
-                <img src="/img/aws.png" alt="AWS" className="h-8" />
-                <img src="/img/HEROKU.png" alt="Heroku" className="h-8" />
-                <img src="/img/JUPYTER.png" alt="Jupyter" className="h-8" />
+                <img src="/img/git.png" alt="Git" className="h-12" />
+                <img src="/img/aws.png" alt="AWS" className="h-12" />
+                <img src="/img/HEROKU.png" alt="Heroku" className="h-12" />
+                <img src="/img/JUPYTER.png" alt="Jupyter" className="h-12" />
               </div>
             </div>
           </div>
