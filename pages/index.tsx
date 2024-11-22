@@ -66,40 +66,34 @@ export default function Home() {
         {/* Left Section: Text Content */}
         <div className="flex-1 space-y-6">
           <h1 className="text-5xl font-bold">
-            You <span className="font-light">R. Name</span>
+            <span className="font-light">Ananya Nigam</span>
           </h1>
           <p className="text-blue-500 dark:text-blue-400 text-xl cursor-pointer">
-            Affiliations. Address. Contacts. Motto. Etc.
+            
           </p>
 
           <p className="text-lg">
-            Write your biography here. Tell the world about yourself. Link to your favorite{" "}
-            <span className="text-blue-500 dark:text-blue-400">subreddit</span>. You can put a picture in, too.
-            The code is already in, just name your picture{" "}
-            <code className="bg-gray-700 dark:text-blue-400 p-1 rounded">prof_pic.jpg</code> and put it
-            in the <code className="bg-gray-700 dark:text-blue-400 p-1 rounded">img/</code> folder.
+          I am Ananya Nigam, a skilled full-stack developer and final-year B.Tech Computer Science student at SRM Institute of Science and Technology with a CGPA of 9.15.  
+          I specialize in designing and developing scalable, efficient web applications using modern technologies like 
+            in the <code className=" text-blue-500 dark:text-blue-400 p-1 rounded">React.js, Node.js, MongoDB, and AWS.</code>
           </p>
 
           <p className="text-lg">
-            Put your address / P.O. box / other info right below your picture. You can also disable
-            any of these elements by editing the profile property of the YAML header of your{" "}
-            <code className="bg-gray-700 dark:text-blue-400 p-1 rounded">_pages/about.md</code>. Edit{" "}
-            <code className="bg-gray-700 dark:text-blue-400 p-1 rounded">_bibliography/papers.bib</code> and Jekyll will
-            render your publications page automatically.
+          With a strong foundation in software development and technical problem-solving, I am passionate about creating user-centric solutions that drive innovation.
+           My expertise spans
+            <code className=" text-blue-500 dark:text-blue-400 p-1 rounded"> frontend and backend development, database management,</code> and  <code className=" text-blue-500 dark:text-blue-400 p-1 rounded"> deploying robust systems </code> for diverse use cases.
           </p>
 
           <p className="text-lg">
-            Link to your social media connections, too. This theme is set up to use{" "}
-            <span className="text-blue-500 dark:text-blue-400">Font Awesome icons</span> and{" "}
-            <span className="text-blue-500 dark:text-blue-400">Academicons</span>, like the ones below. Add your
-            Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+          Dedicated to continuous learning, I hold certifications in  <span className="text-blue-500 dark:text-blue-400">Azure AI Fundamentals</span> and{" "}  
+          <span className="text-blue-500 dark:text-blue-400">cloud technologies.</span> I am committed to leveraging my skills to deliver impactful and efficient solutions in every professional endeavor.{" "}
           </p>
-
+{/* 
           <div className="space-y-2 text-gray-600 dark:text-gray-300 text-lg">
             <p>555 your office number</p>
             <p>123 your address street</p>
             <p>Your City, State 12345</p>
-          </div>
+          </div> */}
         </div>
 
         {/* Right Section: Profile Picture */}

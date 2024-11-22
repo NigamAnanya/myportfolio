@@ -126,7 +126,7 @@ const Education: React.FC = () => {
         'Machine Learning Techniques: Introduction to various machine learning algorithms and neural network basics.',
         'Natural Language Processing: Basics of NLP for text analysis and language understanding.',
       ],
-      logo: '/img/iit.jpg', // Replace with the actual path to your logo
+      logo: '/img/iit.jpg',
       website: 'https://www.iitrpr.ac.in/',
       period: '2024 - 2025',
     },
@@ -138,7 +138,7 @@ const Education: React.FC = () => {
         'Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.',
         'I have secured a CGPA of 9.15 out of 10',
       ],
-      logo: '/img/Srmseal.png', // Replace with the actual path to your logo
+      logo: '/img/Srmseal.png', 
       website: 'https://www.srmist.edu.in/',
       period: '2021 - 2025',
     },
@@ -146,16 +146,41 @@ const Education: React.FC = () => {
 
   const certificationData = [
     {
-      title: 'AWS Certified Solutions Architect',
-      issuer: 'Amazon Web Services',
-      date: 'March 2022',
-      link: 'https://aws.amazon.com/certification/',
+      title: 'Microsoft Certified: Azure AI Fundamentals',
+      issuer: 'Microsoft',
+      date: 'July 2024',
+      link: 'https://drive.google.com/file/d/1L5B8uLCma_slftQvHyZ22bijY6_5u_Vx/view?usp=sharing',
     },
     {
-      title: 'Certified Kubernetes Administrator',
-      issuer: 'The Linux Foundation',
-      date: 'July 2021',
-      link: 'https://www.cncf.io/certification/cka/',
+      title: 'Oracle Cloud Infrastructure 2024 Generative AI Certified Professional',
+      issuer: 'Oracle Certified Professional',
+      date: 'July 2024',
+      link: 'https://drive.google.com/file/d/1MnmoYIYOcCYvMthYXZ3lQodZ1R7vLsb-/view?usp=sharing',
+    },
+    {
+      title: 'Micro-Certification - Welcome to ServiceNow',
+      issuer: 'ServiceNow',
+      date: 'June 2024',
+      link: 'https://drive.google.com/file/d/1vgG1mLPHTs0y-slQs0exYJky2u2RmRlQ/view?usp=sharing',
+    },
+    {
+      title: 'Object-Oriented Data Structures in C++',
+      issuer: 'Coursera',
+      date: 'July 2023',
+      link: 'https://drive.google.com/file/d/1n72zM7rQDAGQD557kmQB-eK8V5D2evV4/view?usp=sharing',
+    },
+    
+    {
+      title: 'Introduction to Packet Tracer',
+      issuer: 'Cisco Networking Academy',
+      date: 'May 2023',
+      link: 'https://drive.google.com/file/d/17r0_SRIQVJJNs0AJLXGkYyATcZsUR8qh/view?usp=sharing',
+    },
+    {
+      title: 'AWS Academy Machine Learning Foundations',
+      issuer: 'AWS Academy Graduate',
+      date: 'April 2023',
+      link: 'https://drive.google.com/file/d/1tkQ5UXMEkKv4bWthz4b0yvxGxekLYuZ3/view?usp=sharing',
     },
   ];
 
