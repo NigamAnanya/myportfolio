@@ -15,7 +15,7 @@ const Achievements: React.FC = () => {
       title: 'Team Leadership',
       description: 'Recognized for outstanding leadership and management in cross-functional teams.',
       image: '/img/team-leadership.jpg', // Replace with your actual image path
-      date: 'Oct 27, 2019',
+      date: ' 2019',
       link: 'https://drive.google.com/your-team-leadership-certificate',
     },
     {
