@@ -60,7 +60,7 @@
 //   const displayedRepos = repos.slice(0, displayedReposCount);
 
 //   return (
-//     <div className="w-full min-h-screen p-8 bg-gray-900 dark:bg-white text-white dark:text-black flex flex-col items-center">
+//     <div className="w-full min-h-screen p-8 bg-gray-700 dark:bg-white text-white dark:text-black flex flex-col items-center">
 //       <div className="space-y-12 max-w-6xl w-full">
 
 //         {/* GitHub Stats and Streaks Section */}
@@ -201,7 +201,7 @@ const Repositories: React.FC<RepositoriesProps> = ({ repos }) => {
   const displayedRepos = repos.slice(0, displayedReposCount);
 
   return (
-    <div className="w-full min-h-screen p-8 bg-gray-900 dark:bg-white text-white dark:text-black flex flex-col items-center">
+    <div className="w-full min-h-screen p-8 bg-gray-700 dark:bg-white text-white dark:text-black flex flex-col items-center">
       <div className="space-y-12 max-w-6xl w-full">
 
         {/* GitHub Stats and Streaks Section */}

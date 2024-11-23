@@ -88,12 +88,7 @@ export default function Home() {
           Dedicated to continuous learning, I hold certifications in  <span className="text-blue-500 dark:text-blue-400">Azure AI Fundamentals</span> and{" "}  
           <span className="text-blue-500 dark:text-blue-400">cloud technologies.</span> I am committed to leveraging my skills to deliver impactful and efficient solutions in every professional endeavor.{" "}
           </p>
-{/* 
-          <div className="space-y-2 text-gray-600 dark:text-gray-300 text-lg">
-            <p>555 your office number</p>
-            <p>123 your address street</p>
-            <p>Your City, State 12345</p>
-          </div> */}
+
         </div>
 
         {/* Right Section: Profile Picture */}
