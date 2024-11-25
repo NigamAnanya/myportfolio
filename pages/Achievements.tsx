@@ -1,110 +1,99 @@
 import React, { useState } from 'react';
 
+// Mock data for achievements
+const achievements = [
+  {
+    title: 'Scaling Ethereum 2024 ',
+    description: 'Winner of Avail track for best project built with Avail DA ',
+    image: '/img/eth scalling.jpg', // Replace with your actual image path
+    date: 'April 27, 2024',
+    certificateLink: 'https://drive.google.com/file/d/1g25wRL-7vlLIe5zY_xmxkTgMmpnwX4kw/view?usp=sharing',
+  },
+  {
+    title: 'Smart India Hackathon ',
+    description: ' All India finalist',
+    image: '/img/SIH2.jpg', // Replace with your actual image path
+    date: '2019',
+    certificateLink: 'https://drive.google.com/file/d/1A3D4M0VjE-QZ2lXxGxoWJrhUrnkH_s2x/view?usp=sharing',
+  },
+  {
+    title: 'SRM Ideathon 4.0',
+    description: 'First prize winner ',
+    image: '/img/Idea.jpg', // Replace with your actual image path
+    date: 'Oct 27, 2019',
+    certificateLink: 'https://drive.google.com/file/d/1e6Vrq_b6CALenUrVbO87U_s_kGaQxaTx/view?usp=sharing',
+  },
+];
+
 const Achievements: React.FC = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [selectedAchievement, setSelectedAchievement] = useState(null);
 
-  const achievements = [
-    {
-      title: 'Project Excellence',
-      description: 'Awarded for delivering exceptional quality in over 100 projects across various domains.',
-      image: '/img/eth scalling.jpg', // Replace with your actual image path
-      date: 'Oct 27, 2019',
-      link: 'https://drive.google.com/your-project-certificate',
-    },
-    {
-      title: ' Leadership',
-      description: 'Recognized for outstanding leadership and management in cross-functional teams.',
-      image: '/img/team-leadership.jpg', // Replace with your actual image path
-      date: ' 2019',
-      link: 'https://drive.google.com/your-team-leadership-certificate',
-    },
-    {
-      title: 'Innovation Award',
-      description: 'Achieved innovation excellence in AI-driven solutions for critical business challenges.',
-      image: '/img/innovation-award.jpg', // Replace with your actual image path
-      date: 'Oct 27, 2019',
-      link: 'https://drive.google.com/your-innovation-certificate',
-    },
-  ];
-
-  // Navigate to the next slide
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % achievements.length);
+  // Function to open the modal with selected achievement details
+  const openAchievementDetails = (achievement) => {
+    setSelectedAchievement(achievement);
   };
 
-  // Navigate to the previous slide
-  const prevSlide = () => {
-    setCurrentSlide((prev) =>
-      prev === 0 ? achievements.length - 1 : prev - 1
-    );
+  // Function to close the modal
+  const closeAchievementDetails = () => {
+    setSelectedAchievement(null);
   };
 
   return (
-    <div className="min-h-screen bg-blue-50 flex flex-col items-center justify-center">
-      <div className="relative w-full h-screen overflow-hidden">
-        {/* Current Slide */}
-        <div
-          className="flex transition-transform duration-500 ease-in-out"
-          style={{
-            transform: `translateX(-${currentSlide * 100}vw)`,
-          }}
-        >
-          {achievements.map((achievement, index) => (
-            <div
-              key={index}
-              className="w-screen h-screen flex-shrink-0 bg-white flex flex-col items-center justify-center p-6"
-            >
-              <div className="overflow-hidden w-full h-3/5">
-                <img
-                  src={achievement.image}
-                  alt={achievement.title}
-                  className="w-full h-full object-cover rounded-lg"
-                />
-              </div>
-              <div className="p-6 w-full text-center">
-                <h2 className="text-5xl font-bold text-gray-800 mb-4">
-                  {achievement.title}
-                </h2>
-                <p className="text-gray-600 text-xl mb-6">
-                  {achievement.description}
-                </p>
-                <span className="text-gray-500 text-lg">{achievement.date}</span>
-              </div>
-            </div>
-          ))}
-        </div>
+    <div className="min-h-screen bg-gray-700 text-white dark:bg-white dark:text-black flex flex-col items-center justify-start pt-12"> {/* Shift everything up by adjusting padding */}
+      <h1 className="text-6xl font-bold mb-16 text-center">Select the achievement</h1> {/* Increased bottom margin for more space */}
 
-        {/* Navigation Buttons */}
-        <div className="absolute inset-x-0 bottom-8 flex justify-between px-8">
-          <button
-            className="bg-gray-300 hover:bg-gray-400 text-gray-800 px-6 py-3 rounded"
-            onClick={prevSlide}
-          >
-            Previous
-          </button>
-          <button
-            className="bg-gray-300 hover:bg-gray-400 text-gray-800 px-6 py-3 rounded"
-            onClick={nextSlide}
-          >
-            Next
-          </button>
-        </div>
-      </div>
-
-      {/* Dots Navigation */}
-      <div className="mt-6 flex justify-center space-x-3">
-        {achievements.map((_, index) => (
-          <button
+      {/* Cards for each achievement */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 w-full max-w-8xl px-6"> {/* Increased gap between cards */}
+        {achievements.map((achievement, index) => (
+          <div
             key={index}
-            className={`w-4 h-4 rounded-full ${
-              currentSlide === index
-                ? 'bg-blue-500'
-                : 'bg-gray-300 hover:bg-gray-400'
-            }`}
-            onClick={() => setCurrentSlide(index)}
-          ></button>
+            className="bg-white p-8 rounded-lg shadow-xl hover:shadow-2xl cursor-pointer flex flex-col justify-between transition-all duration-300 ease-in-out transform hover:scale-105"
+            onClick={() => openAchievementDetails(achievement)}
+          >
+            <img
+              src={achievement.image}
+              alt={achievement.title}
+              className="w-full h-72 object-cover rounded-lg mb-6"
+            />
+            <h2 className="text-3xl font-semibold text-gray-800">{achievement.title}</h2>
+            <p className="text-gray-700 text-xl mt-4">{achievement.description}</p>
+          </div>
         ))}
       </div>
+
+      {/* Modal for Achievement Details */}
+      {selectedAchievement && (
+        <div className="fixed inset-0 bg-gray-500 bg-opacity-60 flex items-center justify-center z-50">
+          <div className="bg-white w-3/4 md:w-2/3 lg:w-1/2 p-10 rounded-lg shadow-2xl">
+            <h2 className="text-4xl font-bold mb-6">{selectedAchievement.title}</h2>
+            <div className="overflow-hidden mb-6">
+              <img
+                src={selectedAchievement.image}
+                alt={selectedAchievement.title}
+                className="w-full h-96 object-cover rounded-lg"
+              />
+            </div>
+            <p className="text-2xl text-gray-700 mb-6">{selectedAchievement.description}</p>
+            <p className="text-lg text-gray-500 mb-6">Date: {selectedAchievement.date}</p>
+            <a
+              href={selectedAchievement.certificateLink}
+              className="text-blue-500 hover:underline text-xl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Certificate
+            </a>
+            <div className="mt-8">
+              <button
+                className="bg-red-500 text-white px-8 py-4 rounded-lg text-xl"
+                onClick={closeAchievementDetails}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
