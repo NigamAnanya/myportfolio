@@ -13,14 +13,14 @@ const achievements = [
     title: 'Smart India Hackathon ',
     description: ' All India finalist',
     image: '/img/SIH2.jpg', // Replace with your actual image path
-    date: '2019',
+    date: 'December, 2023',
     certificateLink: 'https://drive.google.com/file/d/1A3D4M0VjE-QZ2lXxGxoWJrhUrnkH_s2x/view?usp=sharing',
   },
   {
     title: 'SRM Ideathon 4.0',
     description: 'First prize winner ',
     image: '/img/Idea.jpg', // Replace with your actual image path
-    date: 'Oct 27, 2019',
+    date: 'March 2, 2024',
     certificateLink: 'https://drive.google.com/file/d/1e6Vrq_b6CALenUrVbO87U_s_kGaQxaTx/view?usp=sharing',
   },
 ];
