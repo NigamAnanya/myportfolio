@@ -78,10 +78,10 @@ const Navbar: React.FC = () => {
   return (
     <div>
       <nav className="w-full bg-gray-700 dark:bg-gray-100 p-4 flex justify-center items-center space-x-6 text-gray-400 dark:text-black text-lg">
-        <Link href="/" className="hover:underline">about</Link>
+        <Link href="/" className="hover:underline">About</Link>
         <Link href="/Education" className="hover:underline">Education</Link>
-        <Link href="/projects" className="hover:underline">projects</Link>
-        <Link href="/repositories" className="hover:underline">repositories</Link>
+        <Link href="/projects" className="hover:underline">Projects</Link>
+        <Link href="/repositories" className="hover:underline">Repositories</Link>
         
         {/* Resume Download Link */}
         <a 
