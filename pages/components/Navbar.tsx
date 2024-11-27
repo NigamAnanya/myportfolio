@@ -93,8 +93,6 @@ const Navbar: React.FC = () => {
         </a>
         <Link href="/Experience" className="hover:underline">Experience</Link>
         <Link href="/Achievements" className="hover:underline">Achievements</Link>
-        
-        <Link href="/submenu" className="hover:underline">submenu</Link>
 
         {/* Theme Toggle Button */}
         <button
