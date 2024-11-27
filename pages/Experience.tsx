@@ -24,7 +24,7 @@ const Experience: React.FC = () => {
         'Streamlined backend processes by integrating SQL, PHP, and Laravel frameworks, resulting in faster data access and system performance.',
         'Implemented efficient solutions for scalable and secure database management to support growing business needs.',
       ],
-      logo: '/img/Ons.png', // Replace with the actual path to the logo
+      logo: '/img/Ons.png', 
       website: 'https://onstralytics.com/',
       period: 'January 2023 – July 2023',
     },
