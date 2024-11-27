@@ -1,7 +1,16 @@
 import React, { useState } from 'react';
 
+// Define the type for Achievement
+interface Achievement {
+  title: string;
+  description: string;
+  image: string;
+  date: string;
+  certificateLink: string;
+}
+
 // Mock data for achievements
-const achievements = [
+const achievements: Achievement[] = [
   {
     title: 'Scaling Ethereum 2024 ',
     description: 'Winner of Avail track for best project built with Avail DA ',
@@ -11,7 +20,7 @@ const achievements = [
   },
   {
     title: 'Smart India Hackathon ',
-    description: ' All India finalist',
+    description: 'All India finalist',
     image: '/img/SIH2.jpg', // Replace with your actual image path
     date: 'December, 2023',
     certificateLink: 'https://drive.google.com/file/d/1A3D4M0VjE-QZ2lXxGxoWJrhUrnkH_s2x/view?usp=sharing',
@@ -26,10 +35,11 @@ const achievements = [
 ];
 
 const Achievements: React.FC = () => {
-  const [selectedAchievement, setSelectedAchievement] = useState(null);
+  // Use the Achievement type in the state
+  const [selectedAchievement, setSelectedAchievement] = useState<Achievement | null>(null);
 
   // Function to open the modal with selected achievement details
-  const openAchievementDetails = (achievement) => {
+  const openAchievementDetails = (achievement: Achievement) => {
     setSelectedAchievement(achievement);
   };
 
@@ -39,11 +49,11 @@ const Achievements: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-700 text-white dark:bg-white dark:text-black flex flex-col items-center justify-start pt-12"> {/* Shift everything up by adjusting padding */}
-      <h1 className="text-6xl font-bold mb-16 text-center">Select the achievement</h1> {/* Increased bottom margin for more space */}
+    <div className="min-h-screen bg-gray-700 text-white dark:bg-white dark:text-black flex flex-col items-center justify-start pt-12">
+      <h1 className="text-6xl font-bold mb-16 text-center">Select the achievement</h1>
 
       {/* Cards for each achievement */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 w-full max-w-8xl px-6"> {/* Increased gap between cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-16 w-full max-w-8xl px-6">
         {achievements.map((achievement, index) => (
           <div
             key={index}
@@ -99,3 +109,4 @@ const Achievements: React.FC = () => {
 };
 
 export default Achievements;
+
